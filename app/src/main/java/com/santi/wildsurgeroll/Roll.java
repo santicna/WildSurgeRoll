@@ -11,12 +11,12 @@ public final class Roll {
     private final String LOG_TAG = Roll.class.getName();
 
     //Return a random number between 1 and 100.
-    private static int rollDice(){
+    public static int rollDice(){
         return (int) (Math.random()*100)+1;
     }
 
     //Return the corresponding effect depending on the number rolled.
-    private static String getEffect(int roll){
+    public static String getEffect(int roll){
         switch (roll){
             case 1:case 2:case 3:
                 return "You win";
