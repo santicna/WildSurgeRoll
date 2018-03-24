@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">WildSurgeRoll</string>
+
+    <!-- Wild Surge Roll Results -->
+    <string name="r1_2">Roll on this table at the start of each of your turns for the next minute,
+        ignoring this result on subsequent rolls.</string>
+    <string name="r3_4">For the next minute, you can see any invisible creature if you have line of sight to
+        it.</string>
+    <string name="r5_6">A modron chosen and controlled by the DM appears in an unoccupied space within 5 feet of
+        you, then disappears 1 minute later.</string>
+    <string name="r7_8">You cast Fireball as a 3rd-level spell centered on yourself.</string>
+    <string name="r9_10">You cast Magic Missile as a 5th-level spell.</string>
+    <string name="r11_12">Roll a d10. Your height changes by a number of inches equal to the roll. If the roll
+        is odd, you shrink. If the roll is even, you grow.</string>
+    <string name="r13_14">You cast Confusion centered on yourself.</string>
+    <string name="r15_16">	For the next minute, you regain 5 hit points at the start of each of your turns
+        .</string>
+    <string name="r17_18">You grow a long beard made of feathers that remains until you sneeze, at which
+        point the feathers explode out from your face.</string>
+    <string name="r19_20">You cast Grease centered on yourself.</string>
+    <string name="r21_22">Creatures have disadvantage on saving throws against the next spell you cast in
+        the next minute that involves a saving throw.</string>
+    <string name="r23_24">Your skin turns a vibrant shade of blue. A Remove Curse spell can end this
+        effect.</string>
+    <string name="r25_26">An eye appears on your forehead for the next minute. During that time, you
+        have advantage on Wisdom (Perception) checks that rely on sight.</string>
+    <string name="r27_28">For the next minute, all your spells with a casting time of 1 action have a casting time of
+        1 bonus action.</string>
+    <string name="r29_30">You teleport up to 60 feet to an unoccupied space of your choice that you can see.</string>
 </resources>
