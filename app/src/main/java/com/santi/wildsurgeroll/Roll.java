@@ -10,15 +10,17 @@ public final class Roll {
 
     private final String LOG_TAG = Roll.class.getName();
 
-    public static int rollDice(){
-        return (int) (Math.random()*101);
+    //Return a random number between 1 and 100.
+    private static int rollDice(){
+        return (int) (Math.random()*100)+1;
     }
 
-    public static String getEffect(int roll){
+    //Return the corresponding effect depending on the number rolled.
+    private static String getEffect(int roll){
         switch (roll){
-            case 0:case 1:case 2:
+            case 1:case 2:case 3:
                 return "You win";
-            case 3:case 4: case 5:
+            case 4:case 5: case 6:
                 return "You lose";
             default:
                 return "I dunno try gettin' a low one";
