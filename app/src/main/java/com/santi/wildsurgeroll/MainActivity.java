@@ -48,8 +48,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mResetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Reset the state of the UI
+                mRollResult.setVisibility(View.INVISIBLE);
+                mRollEffect.setVisibility(View.INVISIBLE);
+                mResetButton.setVisibility(View.INVISIBLE);
+                mRollButton.setVisibility(View.VISIBLE);
+            }
+        });
+
     }
-
-
 
 }
