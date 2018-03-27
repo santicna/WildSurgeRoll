@@ -87,4 +87,5 @@
         piercing damage for the next minute.</string>
     <string name="r97_98">You are surrounded by faint, ethereal music for the next minute.</string>
     <string name="r99_100">You regain all expended sorcery points.</string>
+    <string name="wrong_roll">This shouldn\'t be happening</string>
 </resources>
