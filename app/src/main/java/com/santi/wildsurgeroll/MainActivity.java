@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 //Roll de the dice
                 int result = Roll.rollDice();
                 //Get the effect for the number rolled
-                String effect = Roll.getEffect(result);
+                int effect = Roll.getEffect(result);
                 //Show the number rolled
                 mRollResult.setText(String.valueOf(result));
                 mRollResult.setVisibility(View.VISIBLE);
                 //Show the effect rolled
-                mRollEffect.setText(effect);
+                mRollEffect.setText(getResources().getString(effect));
                 mRollEffect.setVisibility(View.VISIBLE);
                 //Show reset button
                 mResetButton.setVisibility(View.VISIBLE);
