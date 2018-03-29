@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mRollButton;
 
-
     private Button mRollAgainButton;
 
     @Override
@@ -51,6 +50,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        if (mRollButton.getVisibility()==View.VISIBLE){
+            super.onBackPressed();
+        }
+        else {
+            //Go back to the "main screen"
+            mRollResult.setVisibility(View.INVISIBLE);
+            mRollEffect.setVisibility(View.INVISIBLE);
+            mRollAgainButton.setVisibility(View.INVISIBLE);
+            mRollButton.setVisibility(View.VISIBLE);
+        }
     }
 
     private void haveASurge(){
