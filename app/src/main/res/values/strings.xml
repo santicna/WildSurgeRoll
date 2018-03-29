@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">WildSurgeRoll</string>
 
+    <!-- Buttons labels -->
+    <string name="you_have_a_surge">…You Have a surge</string>
+    <string name="reset_button">reset</string>
+    <string name="roll_again">roll again</string>
+
     <!-- Wild Surge Roll Results -->
     <string name="r01_02">Roll on this table at the start of each of your turns for the next minute,
         ignoring this result on subsequent rolls.</string>
