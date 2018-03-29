@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mResetButton;
 
+    private Button mRollAgainButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,25 +28,23 @@ public class MainActivity extends AppCompatActivity {
         mRollEffect = findViewById(R.id.roll_effect);
         mRollButton = findViewById(R.id.roll_button);
         mResetButton = findViewById(R.id.reset_button);
+        mRollAgainButton = findViewById(R.id.roll_again);
 
 
         mRollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                haveASurge();
                 //Hide the roll Button
                 mRollButton.setVisibility(View.INVISIBLE);
-                //Roll de the dice
-                int result = Roll.rollDice();
-                //Get the effect for the number rolled
-                int effect = Roll.getEffect(result);
-                //Show the number rolled
-                mRollResult.setText(String.valueOf(result));
+                //Show the result
                 mRollResult.setVisibility(View.VISIBLE);
                 //Show the effect rolled
-                mRollEffect.setText(getResources().getString(effect));
                 mRollEffect.setVisibility(View.VISIBLE);
                 //Show reset button
                 mResetButton.setVisibility(View.VISIBLE);
+                //Show rollAgain button
+                mRollAgainButton.setVisibility(View.VISIBLE);
             }
         });
 
@@ -55,10 +55,29 @@ public class MainActivity extends AppCompatActivity {
                 mRollResult.setVisibility(View.INVISIBLE);
                 mRollEffect.setVisibility(View.INVISIBLE);
                 mResetButton.setVisibility(View.INVISIBLE);
+                mRollAgainButton.setVisibility(View.INVISIBLE);
                 mRollButton.setVisibility(View.VISIBLE);
             }
         });
 
+        mRollAgainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                haveASurge();
+            }
+        });
+
+    }
+
+    private void haveASurge(){
+        //Roll de the dice
+        int result = Roll.rollDice();
+        //Get the effect for the number rolled
+        int effect = Roll.getEffect(result);
+        //Show the number rolled
+        mRollResult.setText(String.valueOf(result));
+        //Show the effect rolled
+        mRollEffect.setText(getResources().getString(effect));
     }
 
 }
