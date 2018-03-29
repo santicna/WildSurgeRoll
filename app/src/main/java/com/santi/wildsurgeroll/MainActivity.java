@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mRollButton;
 
-    private Button mResetButton;
 
     private Button mRollAgainButton;
 
@@ -27,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         mRollResult = findViewById(R.id.roll_result);
         mRollEffect = findViewById(R.id.roll_effect);
         mRollButton = findViewById(R.id.roll_button);
-        mResetButton = findViewById(R.id.reset_button);
         mRollAgainButton = findViewById(R.id.roll_again);
 
 
@@ -41,22 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 mRollResult.setVisibility(View.VISIBLE);
                 //Show the effect rolled
                 mRollEffect.setVisibility(View.VISIBLE);
-                //Show reset button
-                mResetButton.setVisibility(View.VISIBLE);
                 //Show rollAgain button
                 mRollAgainButton.setVisibility(View.VISIBLE);
-            }
-        });
-
-        mResetButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Reset the state of the UI
-                mRollResult.setVisibility(View.INVISIBLE);
-                mRollEffect.setVisibility(View.INVISIBLE);
-                mResetButton.setVisibility(View.INVISIBLE);
-                mRollAgainButton.setVisibility(View.INVISIBLE);
-                mRollButton.setVisibility(View.VISIBLE);
             }
         });
 
